@@ -106,28 +106,77 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-.navigation ul li{
-  display: inline;
-  
-}
+.navigation ul li{display: inline;}
 .navigation ul{
   float: right;
+  margin-top: 40px;
 }
 .navigation ul li a{
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px 10px;
+  color: #fff;
 }
 .navigation a:hover{  
   color: #fff;
   border-radius: 5px;
-  background-color: seagreen;
+  background-color: #89d46e;
   padding: 10px;
 }
 
+h1{
+  float: left;
+  color: #fff;
+  margin-top: 40px;
+}
+.logo:after{
+  content: "";
+  visibility: none;
+  clear: both;
+}
+/*=================================*/
 
+.banner{
+  background-image: linear-gradient(to bottom,#301818,#6b2525,#a32222);
+  border-top: 5px solid #89d46e;
+}
+.info h2{
+  color: #fff;
+  font-size: 30px;
+}
+.info p{
+  color: gray;
+}
+.green-button{
+  color: #fff;
+  border-radius: 5px;
+  background-color: #4ca62b;
+  padding: 10px;
+}
+.green-button:hover{
+  color: #000000;
+  background-color: #b2dea2;
+}
+.image1 img{
+  border-radius: 100%;
+  border: 10px solid #a8ada6;
+}
+.banner-button{
+  position: relative;
+  color: #4ca62b;
+}
+.l-button{
+  left: 0;
+}
+.r-button{
+  right: 0;
+}
 
-
+header:after{
+  content: "";
+  display: block;
+  clear: both;
+}
 /*=================================
   Header styling ends here
 =================================*/  
