@@ -200,6 +200,7 @@ service-section section start
 }
 .box1,.box2,.box3,.box4{
   border: 1px solid black;
+  padding: 20px 50px;
 }
 .service-boxes span{
   font-size: 30px;
@@ -208,12 +209,43 @@ service-section section start
 .service-boxes p{
   color: #a8ada6;
 }
-.service-boxes img{
-  width: 60;
-}
 
 /*=================================
 service-section section end
+=================================*/
+
+
+/*=================================
+work-section section start
+=================================*/
+.work{
+  background-color: #a32222;
+  text-align: center;
+  padding: 30px;
+}
+.line-one a,.line-two a{
+  border: 3px solid #fff;
+}
+.work h2{
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.work-boxes .line-one,.work-boxes .line-two{
+  display: flex;
+}
+.work-boxes span{
+  text-transform: uppercase;
+  color: #fff;
+  background-color: black;
+}
+.work-boxes .line-one{
+  margin-bottom: 30px;
+}
+/*=================================
+work-section section end
 =================================*/
 
 
