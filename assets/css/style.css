@@ -106,15 +106,24 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header{
-  background-color: blue;
-}
-
 .navigation ul li{
   display: inline;
-  text-decoration: none;
+  
 }
-
+.navigation ul{
+  float: right;
+}
+.navigation ul li a{
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+.navigation a:hover{  
+  color: #fff;
+  border-radius: 5px;
+  background-color: seagreen;
+  padding: 10px;
+}
 
 
 
