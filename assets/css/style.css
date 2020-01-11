@@ -196,9 +196,21 @@ service-section section start
 .service-boxes{
   display: flex;
   text-align: center;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
-.box1,.box2,.box3,.box4{padding: 20px 50px;}
+.box1{margin-right: 30px;}
+.box2{margin-right: 30px;}
+.box3{margin-right: 30px;}
+
+.box1:hover{background-color: #b2dea2;}
+.box2:hover{background-color: #b2dea2;}
+.box3:hover{background-color: #b2dea2;}
+.box4:hover{background-color: #b2dea2;}
+
+.box1,.box2,.box3,.box4{
+  background-color: #fff;
+  padding: 20px 50px;
+}
 
 .service-boxes span{
   font-size: 30px;
@@ -224,23 +236,29 @@ work-section section start
 .line-one a,.line-two a{
   border: 3px solid #fff;
 }
+
+.line-one a:not(:last-child){margin-right: 30px;}
+
+.line-two a:not(:last-child){margin-right: 30px;}
+.line-one,.line-two{margin-left: 50px;}
 .work h2{
   text-transform: uppercase;
   color: #fff;
   font-size: 30px;
   padding: 10px;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 .work-boxes .line-one,.work-boxes .line-two{display: flex;}
 
 .work-boxes span{
   text-transform: uppercase;
   color: #fff;
-  background-color: black;
+  display: block;
+  background-color: #282928;
+  padding: 15px;
 }
-.work-boxes .line-one{
-  margin-bottom: 30px;
-}
+.line-one{margin-bottom: 30px;}
 /*=================================
 work-section section end
 =================================*/
