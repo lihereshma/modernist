@@ -198,10 +198,8 @@ service-section section start
   text-align: center;
   background-color: #fff;
 }
-.box1,.box2,.box3,.box4{
-  border: 1px solid black;
-  padding: 20px 50px;
-}
+.box1,.box2,.box3,.box4{padding: 20px 50px;}
+
 .service-boxes span{
   font-size: 30px;
   text-transform: uppercase;
@@ -233,9 +231,8 @@ work-section section start
   padding: 10px;
   margin-bottom: 20px;
 }
-.work-boxes .line-one,.work-boxes .line-two{
-  display: flex;
-}
+.work-boxes .line-one,.work-boxes .line-two{display: flex;}
+
 .work-boxes span{
   text-transform: uppercase;
   color: #fff;
@@ -249,9 +246,6 @@ work-section section end
 =================================*/
 
 
-
-
-
 /*=================================
   main styling ends here
 =================================*/
@@ -259,20 +253,63 @@ work-section section end
 /*=================================
   footer styling starts here
 =================================*/ 
+footer{
+  background-color: #333632;
+  text-align: center;
+}
+.footer-boxes{
+  display: flex;
+  text-align: left;
+}
+.footer-links{padding: 30px;}
+
+.footer-boxes h2{
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.blog p:first-of-type,.blog span,.blog a,.tweet span,.links{
+  color: #4ca62b;
+}
+
+.blog small{font-size: smaller;}
+
+.links:before{
+  content: "\f101";
+  font-family: FontAwesome;
+}
+.links{margin-bottom: 10px;}
+
+.form input[type="text"],input[type="email"],textarea{
+  background-color: #282928;
+  color: #333632;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: length;
+  cursor: pointer;
+}
+.form input:hover{background-color:#fff;}
+textarea:hover{background-color:#fff;}
+.footer-boxes a:hover{color:#fff;}
+.tweet span:hover{color: #fff;}
+
+textarea{resize: none;}
+.tweet p,.blog p{
+  color: #8b8f8b;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.blog,.tweet,.quick-links{margin-right: 100px;}
 
 
-
-
-
-
-
+.copyrights{color:#8b8f8b;}
+.copyrights p{text-align: left;}
+.copyrights span{text-align: right;}
  /*=================================
   footer styling ends here
 =================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
 
 
 
