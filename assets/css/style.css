@@ -106,7 +106,14 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header{
+  background-color: blue;
+}
 
+.navigation ul li{
+  display: inline;
+  text-decoration: none;
+}
 
 
 
