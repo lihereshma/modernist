@@ -259,6 +259,8 @@ work-section section start
   padding: 15px;
 }
 .line-one{margin-bottom: 30px;}
+
+.work-boxes span:hover{color:#4ca62b;}
 /*=================================
 work-section section end
 =================================*/
@@ -297,7 +299,10 @@ footer{
   content: "\f101";
   font-family: FontAwesome;
 }
-.links{margin-bottom: 10px;}
+.links{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #4ca62b;
+}
 
 .form input[type="text"],input[type="email"],textarea{
   background-color: #282928;
@@ -321,10 +326,17 @@ textarea{resize: none;}
 }
 .blog,.tweet,.quick-links{margin-right: 100px;}
 
+footer hr{border-color: #000000;}
+
 
 .copyrights{color:#8b8f8b;}
-.copyrights p{text-align: left;}
-.copyrights span{text-align: right;}
+.copyrights p{
+  float: left;
+}
+.copyrights span{
+  display: inline-block;
+  float:right;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
