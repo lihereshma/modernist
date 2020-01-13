@@ -140,6 +140,11 @@ h1{
   background-image: linear-gradient(to bottom,#301818,#6b2525,#a32222);
   border-top: 5px solid #89d46e;
 }
+
+.content .info:nth-of-type(n+2),.content .image1:nth-of-type(n+2){
+  display: none;
+}
+
 .info h2{
   color: #fff;
   font-size: 30px;
