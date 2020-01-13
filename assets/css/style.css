@@ -111,18 +111,20 @@ li {
   float: right;
   margin-top: 40px;
 }
+
+.navigation .active{
+  color: #fff;
+  border-radius: 5px;
+  background-color: #89d46e;
+  padding: 8px;
+}
 .navigation ul li a{
   text-transform: uppercase;
   text-decoration: none;
   padding: 10px 10px;
   color: #fff;
 }
-.navigation a:hover{  
-  color: #fff;
-  border-radius: 5px;
-  background-color: #89d46e;
-  padding: 10px;
-}
+.navigation a:hover{  color:#1c1d1c;}
 
 h1{
   float: left;
@@ -139,18 +141,41 @@ h1{
 .banner{
   background-image: linear-gradient(to bottom,#301818,#6b2525,#a32222);
   border-top: 5px solid #89d46e;
+  padding-bottom: 50px;
 }
 
-.content .info:nth-of-type(n+2),.content .image1:nth-of-type(n+2){
+.content .slide:nth-of-type(n+2){
   display: none;
 }
 
+.slide{
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+}
+
+.slide .info{width: 40%;}
+
+.content{
+  display: flex;
+  position: relative;
+}
+
+.info{
+  width: 40%;
+  padding: 0px 80px 0px 80px;
+}
+
+
 .info h2{
   color: #fff;
-  font-size: 30px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 20%;
 }
 .info p{
   color: gray;
+  margin-bottom: 20px;
 }
 .green-button{
   color: #fff;
@@ -164,18 +189,20 @@ h1{
 }
 .image1 img{
   border-radius: 100%;
-  border: 10px solid #a8ada6;
+  border: 30px solid #707270;
+  width: 70%;
 }
 .banner-button{
-  position: relative;
+  position: absolute;
   color: #4ca62b;
+  top: 50%;
 }
-.l-button{
-  left: 0;
-}
-.r-button{
-  right: 0;
-}
+
+.banner-button:hover{color: #fff;}
+
+.l-button{left: 0px;}
+
+.r-button{right: 0px;}
 
 header:after{
   content: "";
@@ -201,18 +228,13 @@ service-section section start
 .service-boxes{
   display: flex;
   text-align: center;
-  /*background-color: #fff;*/
+  margin-top: 40px;
 }
-.box1{margin-right: 30px;}
-.box2{margin-right: 30px;}
-.box3{margin-right: 30px;}
+.box:not(:last-child){margin-right: 20px;}
 
-.box1:hover{background-color: #b2dea2;}
-.box2:hover{background-color: #b2dea2;}
-.box3:hover{background-color: #b2dea2;}
-.box4:hover{background-color: #b2dea2;}
+.box:hover{background-color: #b2dea2;}
 
-.box1,.box2,.box3,.box4{
+.box{
   background-color: #fff;
   padding: 20px 50px;
 }
@@ -221,9 +243,7 @@ service-section section start
   font-size: 30px;
   text-transform: uppercase;
 }
-.service-boxes p{
-  color: #a8ada6;
-}
+.service-boxes p{color: #a8ada6;}
 
 /*=================================
 service-section section end
@@ -323,7 +343,11 @@ textarea:hover{background-color:#fff;}
 .footer-boxes a:hover{color:#fff;}
 .tweet span:hover{color: #fff;}
 
-textarea{resize: none;}
+textarea{
+  resize: none;
+  height: 65px;
+}
+
 .tweet p,.blog p{
   color: #8b8f8b;
   margin-top: 20px;
@@ -335,17 +359,11 @@ footer hr{border-color: #000000;}
 
 
 .copyrights{color:#8b8f8b;}
-.copyrights p{
-  float: left;
-}
+.copyrights p{float: left;}
 .copyrights span{
   display: inline-block;
-  float:right;
+  padding-left: 50%;
 }
  /*=================================
   footer styling ends here
 =================================*/ 
-
-
-
-}  
